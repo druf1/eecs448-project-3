@@ -1,0 +1,30 @@
+nav {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3871C1;
+}
+
+ul {
+    list-style-type: none; /* removes bullet points from list */
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block; 
+    color: white;
+    padding: 16px 16px;
+    text-decoration: none; /* removes underline from listed links */
+}
+
+li:hover {
+    background-color: #305894;
+}
