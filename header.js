@@ -4,7 +4,8 @@ class siteHeader extends HTMLElement {
             <img src="justBeClawsBanner.png" style="width:50%; height:auto; display:block; margin-left:auto; margin-right:auto"/>
             <nav>
                 <ul>
-                    <li><a href="https://www.patreon.com/JustBeClaws">Donate</a></li>
+                   <!-- <li><a href="https://www.patreon.com/JustBeClaws">Donate</a></li> -->
+                    <li><a href="donate.html">Donate</a></li>
                     <li><a href="aboutUs.html">About Us</a></li>
                     <li><a href="animals.html">Animals</a></li>
                     <li><a href="signUp.html">Sign Up</a></li>
