@@ -28,3 +28,25 @@ li a {
 li:hover {
     background-color: #305894;
 }
+
+div.content {
+    background-color: #83ace4;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    display:block;
+    width:60%;
+    height:800px;
+}
+
+.animal-main img {
+    width: auto;
+    height: 100%;
+}
+
+.animal-main {
+    width: 30%;
+    height: auto;
+    padding: 5px;
+    overflow: hidden;
+}
