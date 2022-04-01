@@ -7,7 +7,7 @@ class siteHeader extends HTMLElement {
                     <!-- <li><a href="https://www.patreon.com/JustBeClaws">Donate</a></li> -->
                     <li><a href="donate.html">Donate</a></li>
                     <li><a href="homePage.html">About Us</a></li>
-                    <li><a href="animals.html">Animals</a></li>
+                    <li><a href="animals-admin.html">Animals</a></li>
                     <li><a href="signUp.html">Sign Up</a></li>
                     <li><a href="login.html">Login</a></li>
                 </ul>
