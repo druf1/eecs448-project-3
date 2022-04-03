@@ -21,6 +21,7 @@ const initializePage = function () {
         labels[i].innerText = info[i];
         forms[i].value = info[i].toString().slice(0,-1);
         forms[i].readOnly = true;
+        forms[i].style.color = "black";
     }
 
     //show description
