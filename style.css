@@ -34,6 +34,7 @@ li a {
 
 li:hover {
     background-color: #305894;
+    cursor: pointer;
 }
 
 div.content {
