@@ -43,7 +43,7 @@ const editAnimalInfo = function() {
     //hide description paragraph and show textarea
     description.style.display = 'none';
     textarea.style.display = 'block';
-    textarea.setAttribute('rows',12);
+    textarea.setAttribute('rows',8);
 
     //update button text
     document.getElementById('edit-btn').innerText = "Submit";
@@ -71,5 +71,17 @@ const submitEdits = function() {
     //update button inner text
     document.getElementById('edit-btn').innerText = "Edit";
 }
+
+//#region show hide arrows
+const showArrows = function() {
+    document.getElementById('prev-image').style.opacity = 1;
+    document.getElementById('next-image').style.opacity = 1;
+}
+
+const hideArrows = function() {
+    document.getElementById('prev-image').style.opacity = 0;
+    document.getElementById('next-image').style.opacity = 0;
+}
+//#endregion 
 
 initializeInfo();
