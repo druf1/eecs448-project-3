@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+html * {
+    font-family: 'Noto Sans', sans-serif;
+}
+
 nav {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -6,6 +12,7 @@ nav {
     align-items: center;
     justify-content: center;
     background-color: #3871C1;
+    min-width: 600px;
 }
 
 ul {
@@ -37,8 +44,11 @@ div.content {
     margin-top: 10px;
     padding: 10px;
     display:block;
+    overflow: auto;
     width:60%;
     height:800px;
+    min-width: 600px;
+    max-width: 1000px;
 }
 
 .animal-main img {
@@ -49,33 +59,49 @@ div.content {
 .animal-main {
     display: inline-block;
     width: 30%;
-    height: 35%;
-    padding: 5px;
+    height: 36%;
     margin: 20px;
     overflow: hidden;
-    background-color: red;
+    /*background-color: red;*/
     
 }
 
 .animal-info {
     display: inline-block;
-    width: 30%;
-    height: 35%;
-    padding: 5px;
+    width: 60%;
+    height: 36%;
     margin: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
     overflow: hidden;
-    background-color: red;
+    /*background-color: red;*/
 }
 
 .animal-info p {
-    margin-top: 2px;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: large;
 }
 
+.description {
+    margin: 20px;
+    width: 90%;
+    resize: none;
+    display: none;
+}
+
+.animal-info label {
+    margin-top:4px;
+    margin-bottom:4px;
+    margin-right:8px;
+    float: left;
+    color: white;
+    font-weight: bold;
+    text-align: right;
+}
+
 .animal-info input {
-    display:none;
+    float: right;
+    margin-bottom:4px;
 }
 
 .animal-info button {
@@ -88,7 +114,6 @@ div.content {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: large;
 }
 
