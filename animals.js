@@ -29,6 +29,9 @@ const initializePage = function () {
 
     //set image source
     document.getElementById('animal-image').src = imageSources[imageIndex];
+
+    //clear image selection
+    clearSelection();
 }
 
 //#region Edit & Submit
@@ -59,8 +62,10 @@ const editAnimalInfo = function() {
     //update button text
     document.getElementById('edit-btn').innerText = "Submit";
 
-    //show file select
+    //show file select & clear
     document.getElementById('image-uploader').style.display="inline-block";
+    document.getElementById('clear-btn').style.display='inline-block';
+    document.getElementById('clear-btn').style.float='right';
 }
 
 const submitEdits = function() {
@@ -88,8 +93,9 @@ const submitEdits = function() {
     //add image
     addImage();
 
-    //hide file selector
+    //hide file selector & clear
     document.getElementById('image-uploader').style.display="none";
+    document.getElementById('clear-btn').style.display='none';
 }
 //#endregion
 
@@ -124,8 +130,13 @@ const changeImage = function(indexChange) {
 
 const addImage = function() {
     let image = document.getElementById('image-uploader').value;
-    imageSources.push(image);
+    if(image != '') imageSources.push(image);
     console.log(imageSources);
+    clearSelection();
+}
+
+const clearSelection = function() {
+    document.getElementById('image-uploader').value = '';
 }
 
 initializePage();

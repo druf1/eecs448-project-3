@@ -133,11 +133,13 @@ div.content {
     color: white;
     float: right;
     margin-bottom:4px;
+    margin: 5px;
     width: 250px;
 }
 
-.info-buttons {
-    display: block;
+.animal-info button {
+    margin: 5px;
+    height: 22px;
 }
 
 
