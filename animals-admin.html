@@ -16,11 +16,11 @@
         <div class="content">
             <div class="animal-main">
                 <img id="animal-image" src="animals-main-img-placeholder.png" onmouseenter="showArrows()" onmouseout="hideArrows()">
-                <a id="prev-image" class="prev-image" onmouseenter="showArrows()">&#11164</a>
-                <a id="next-image" class="next-image" onmouseenter="showArrows()">&#11166</a>
+                <a id="prev-image" class="prev-image" onmouseenter="showArrows()" onclick="changeImage(-1)">&#11164</a>
+                <a id="next-image" class="next-image" onmouseenter="showArrows()" onclick="changeImage(1)">&#11166</a>
+                <a id="add-image" class="add-image" onmouseenter="showArrows()" onclick="addImage()"></a>
             </div>
-            <div id="info-div" class="animal-info" >
-                
+            <div id="info-div" class="animal-info" >     
                 <div id="info-label-div" style="float: left; margin-left: 5px">
                     <label for="litter-name-form"></label><input id="litter-name-form" type="text"></input><br><br>
                     <label for="animal-name-form"></label><input id="animal-name-form" type="text"></input><br><br>
@@ -28,7 +28,11 @@
                     <label for="intake-date-form"></label><input id="intake-date-form" type="text"></input><br><br>
                     <label for="adoption-date-form"></label><input id="adoption-date-form" type="text"></input><br><br>
                     <label for="adoption-name-form"></label><input id="adoption-name-form" type="text"></input><br><br>
-                    <button id="edit-btn" onclick="editButtonHandler()">Edit</button>
+                    <div id="button-div">
+                        <button id="edit-btn" onclick="editButtonHandler()">Edit</button>
+                        <input id="image-uploader" type="file" name="images" accept="image/*" style="display:none"></input>
+                    </div>
+
                 </div>                
             </div>
             
