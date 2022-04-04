@@ -21,7 +21,6 @@ ul {
 }
 
 li {
-    float: left;
     transition-duration: 0.4s;
 }
 
@@ -48,13 +47,14 @@ li:hover {
 div.content {
     /*background-color: #83ace4;*/
     background-color: #3871C1;
+    color: white;
     margin: auto;
     margin-top: 10px;
     padding: 10px;
     display:block;
     overflow: auto;
     width:60%;
-    height:800px;
+    height:900px;
     min-width: 600px;
     max-width: 1000px;
     position:relative;
