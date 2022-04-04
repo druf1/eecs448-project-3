@@ -13,6 +13,22 @@
     </header>
     
     <body>
+        <div class="content">
+            
+            <div id="info-div" class="animal-info" >     
+                <div id="info-label-div" style="float: left; margin-left: 5px">
+                    <label for="litter-name-form"></label><input id="litter-name-form" type="text"></input><br><br>
+                    <label for="animal-name-form"></label><input id="animal-name-form" type="text"></input><br><br>
+                    <div id="button-div">
+                        <button id="login-btn" onclick="loginButtonHandler()">Edit</button>
+                        <button id="forgot-pw-btn" onclick="forgotPWButtonHandler()">Edit</button>
+                        <button id="clear-btn" onclick="clearSelection()" style="float:right; display:none">Clear</button>
+                    </div>
+                </div>                
+            </div>
+            <br>
+        </div>
 
+        <script src="login.js" type="text/javascript" language="javascript"></script>
     </body>
 </html>
