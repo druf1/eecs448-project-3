@@ -70,10 +70,7 @@ div.content {
     display:block;
 }
 
-.animal-main img {
-    width: auto;
-    height: 100%;
-}
+
 
 .prev-image, .next-image  {
     background-color: #404040;
@@ -100,8 +97,23 @@ div.content {
     padding: 10px;
     overflow: hidden;
     position: relative;
-    /*background-color: red;*/
-    
+}
+
+.animal-main img {
+    width: auto;
+    height: 100%;
+}
+
+.animal-list li {
+    display: block;
+}
+
+.thumbnail {
+    float:left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
 }
 
 .animal-info {

@@ -6,7 +6,7 @@ class siteHeader extends HTMLElement {
                 <ul>
                     <li style="float:left"><a href="donate.html">Donate</a></li>
                     <li style="float:left"><a href="homePage.html">About Us</a></li>
-                    <li style="float:left"><a href="animals-admin.html">Animals</a></li>
+                    <li style="float:left"><a href="animal-list.html">Animals</a></li>
                     <li style="float:left"><a href="signUp.html">Sign Up</a></li>
                     <li style="float:left"><a href="login.html">Login</a></li>
                 </ul>
