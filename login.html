@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>JustBeClaws</title>
-        <link rel="icon" href="justBeClawsIcon.png">
-        <link rel="stylesheet" href="style.css" type="text/css">
-        <script src="customElements.js" type="text/javascript" language="javascript"></script>
+        <head>
+            <link rel="stylesheet" href="LoginStyle.css">
+          </head>
     </head>
-    
-    <header>
-       <site-header></site-header>
-    </header>
-    
-    <body>
-        <div class="content">
-            
-            <div id="info-div" class="animal-info" >     
-                <div id="info-label-div" style="float: left; margin-left: 5px">
-                    <label for="username-form"></label><input id="username-form" type="text"></input><br><br>
-                    <label for="password-form"></label><input id="password-form" type="text"></input><br><br>
-                    <div id="button-div">
-                        <button id="login-btn" onclick="loginButtonHandler()">Edit</button>
-                        <button id="forgot-pw-btn" onclick="forgotPWButtonHandler()">Edit</button>
-                    </div>
-                </div>                
-            </div>
-            <br>
+    <form action="action_page.php" method="post">
+        <div class="imgcontainer">
+          <img src="JustBeClawsBanner.png" alt="Just Be Claws Banner" class="Banner">
         </div>
-
-        <script src="login.js" type="text/javascript" language="javascript"></script>
-    </body>
+      
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+      
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <span class="psw"> <a href="#">Forgot password?</a></span>
+        </div>
+      </form>
 </html>
