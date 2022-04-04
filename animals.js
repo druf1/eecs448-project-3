@@ -141,5 +141,3 @@ const clearSelection = function() {
 }
 
 initializePage();
-
-console.log(document.getElementById('edit-btn').getAttribute('type'));

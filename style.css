@@ -37,6 +37,14 @@ li:hover {
     cursor: pointer;
 }
 
+.title {
+    color: white; 
+    font-weight: bold;
+    margin: 20px;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
 div.content {
     /*background-color: #83ace4;*/
     background-color: #3871C1;
@@ -49,6 +57,7 @@ div.content {
     height:800px;
     min-width: 600px;
     max-width: 1000px;
+    position:relative;
 }
 
 .incremement-animal {
