@@ -54,7 +54,7 @@ div.content-basic {
     background-color: #dfe6ef;
     color: black;
     margin: auto;
-    margin-top: 10px;
+    
     padding: 10px;
     display:block;
     overflow: auto;
@@ -71,7 +71,7 @@ div.content-emphasis {
     background-color: #0b4d9e;
     color: white;
     margin: auto;
-    margin-top: 10px;
+    
     padding: 10px;
     display:block;
     overflow: auto;
@@ -207,8 +207,7 @@ div.content-emphasis {
     font-size: 200%;
     width: relative;
     height: relative;
-    margin-top: 5%;
-    margin-right: 5%;
+    margin:3px;
   }
 .donate-button:hover {
     background-color: #305894;
@@ -236,21 +235,22 @@ div.content-emphasis {
   }
   /* Add a black background color to the top navigation */
 .topnav {
-    
-    overflow: hidden;
-    font-weight: bold;
-    height: auto;
-    display: flex;
-    border-radius: 12px;
-    margin-top: 6px;
+    background-color: white;
+    float: center;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    margin: 3px;
+    text-decoration: none;
+    font-size: 36px;
+    border-radius: 6px;
  
   }
   
   /* Style the links inside the navigation bar */
-  .rightcolumn a {
-    float: right;
-    background-color: #002A5D;
-    color: white;
+  .topnav a {
+    float: center;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     margin-left: 3px;
@@ -259,54 +259,40 @@ div.content-emphasis {
     border-radius: 6px;
   }
   
-  .rightcolumn b {
-    float: right;
-    background-color: #002A5D;
-    color: white;
+.topnav b {
+    float: center;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 36px;
     border-radius: 6px;
-    margin-left: 6px;
+    margin-left: 3px;
 
   }
   /* Change the color of links on hover */
-  .rightcolumn a:hover {
+   .topnav a:hover {
+    background-color: #026EF2
+    ;
+    border-radius: 6px;
+    color: white;
+  }
+
+  .topnav a.active{
     background-color: #f38a0a;
     border-radius: 6px;
     color: white;
   }
   
 
- /* Style the links inside the navigation bar */
- .leftcolumn a {
-        float: left;
-        background-color: #002A5D;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 36px;
-        border-radius: 6px;
-        margin-left: 6px;
-      }
-
-      /* Change the color of links on hover */
-      .leftcolumn a:hover {
-        background-color: #f38a0a;
-        border-radius: 6px;
-        color: white;
-      }
-      
-      /* Add a color to the active/current link */
-      .leftcolumn a.active {
-        background-color: #f38a0a;
-        color: white;
-      }
-
   .HeaderImageBackground {
   
     background-color:#dfe6ef;
     border-radius: 6px;
+  }
+
+  .background{
+    background-color:#dfe6ef;
+    border-radius: 6px;
+    padding: 10px;
   }
