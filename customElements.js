@@ -6,39 +6,47 @@ class siteHeader extends HTMLElement {
             case "default":
                     //default
                     this.innerHTML = `
-                                <img src="justBeClawsBanner.png" style="width:50%; height:auto; display:block; margin-left:auto; margin-right:auto"/>
-                                <nav>
-                                    <ul>
-                                        <li style="float:left"><a href="donate.html">Donate</a></li>
-                                        <li style="float:left"><a href="homePage.html">About Us</a></li>
-                                        <li style="float:left"><a href="animal-list.html">Animals</a></li>
-                                        <li style="float:left"><a href="signUp.html">Sign Up</a></li>
-                                        <li style="float:left"><a href="login.html">Login</a></li>
-                                    </ul>
-                                </nav>
+                    <img src="JustBeClawsHeaderImage.png" style="width:50%; height:auto; display:block; margin-left:auto; margin-right:auto"/>
+                    <div id="primary" class="topnav">
+                        <div class="secondary leftcolumn">
+                            <a href="homePage.html">Home</a>
+                            <a href="animal-list.html">Animals</a>
+                            <a href="donate.html">Donate</a>
+                        </div>
+
+                        <div class="secondary rightcolumn">
+                            <a href="signUp.html">Sign Up</a>
+                            <a href="login.html">Login</a>
+                        </div>
+                    </div>
                     `;
                 break;
             case "adopter":
                     //adopter
                     this.innerHTML = `
-                                <img src="justBeClawsBanner.png" style="width:50%; height:auto; display:block; margin-left:auto; margin-right:auto"/>
-                                <nav>
-                                    <ul>
-                                        <li style="float:left"><a href="donate.html">Donate</a></li>
-                                        <li style="float:left"><a href="homePage.html">About Us</a></li>
-                                        <li style="float:left"><a href="animal-list.html">Animals</a></li>
-                                        <li style="float:left"><a href="applications.html">Applications</a></li>
-                                        <li style="float:left"><a onclick='switchUserType("default")'>Log Out</a></li>
-                                        <li style="float:right"><a>Signed in as adopter</a></li>  
-                                    </ul>
-                                </nav>
+                    <div class="HeaderImageBackground">
+                        <img src="JustBeClawsHeaderImage.png" style="width:50%; height:auto; display:block; margin-left:auto; margin-right:auto"/>
+                    </div>
+                        <div id="primary" class="topnav">
+                            <div class="secondary leftcolumn">
+                                <a href="homePage.html">Home</a>
+                                <a href="animal-list.html">Animals</a>
+                                <a href="donate.html">Donate</a>
+                                <a href="applications.html">Applications</a>
+                            </div>
+
+                            <div class="secondary rightcolumn">
+                                <a onclick='switchUserType("default")'>Log Out</a>
+                                <b>Signed in as adopter</a>
+                            </div>
+                        </div>
                     `;
                 break;
             case "foster":
                     //foster
                     this.innerHTML = `
                             <img src="justBeClawsBanner.png" style="width:50%; height:auto; display:block; margin-left:auto; margin-right:auto"/>
-                            <nav>
+                            <topnav>
                                 <ul>
                                     <li style="float:left"><a href="donate.html">Donate</a></li>
                                     <li style="float:left"><a href="homePage.html">About Us</a></li>
@@ -48,14 +56,14 @@ class siteHeader extends HTMLElement {
                                     <li style="float:left"><a>Log Out</a></li>
                                     <li style="float:right"><a>Signed in as foster</a></li>  
                                 </ul>
-                            </nav>
+                            </topnav>
                     `;
                 break;
             case "admin":
                     //admin
                     this.innerHTML = `
                         <img src="justBeClawsBanner.png" style="width:50%; height:auto; display:block; margin-left:auto; margin-right:auto"/>
-                        <nav>
+                        <topnav>
                             <ul>
                                 <li style="float:left"><a href="donate.html">Donate</a></li>
                                 <li style="float:left"><a href="homePage.html">About Us</a></li>
@@ -65,7 +73,7 @@ class siteHeader extends HTMLElement {
                                 <li style="float:left"><a>Log Out</a></li>
                                 <li style="float:right"><a>Signed in as admin</a></li>                                
                             </ul>
-                        </nav>
+                        </topnav>
                     `;
                 break;
         }
